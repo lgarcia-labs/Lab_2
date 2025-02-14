@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" class="nojs">
+<head>
+  <title>Lab 2</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+  <link rel="stylesheet" media="screen" href="css/meyersreset-and-normalize-form.css" />
+  <link rel="stylesheet" media="screen" href="css/screen.css" />
+</head>
+<body>
+ <form action="submit-form.php" method="POST" autocomplete="on">
+    <fieldset>
+      <legend>Enter Your Information</legend>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required placeholder="example@email.com">
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required placeholder="123-456-7890" 
+             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12">
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <button type="submit">Submit</button>
+    </fieldset>
+  </form>
+</body>
+</html>
